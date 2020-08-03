@@ -1,0 +1,113 @@
+.pink-monster{
+    filter:hue-rotate(180deg);
+}
+
+.gold-monster-old{
+    filter:hue-rotate(270deg) saturate(200%);
+}
+
+.normal-monster{
+    filter:hue-rotate(360deg);
+}
+
+/* Styles go here */
+.tableFixHead          { overflow-y: auto; height: 600px; }
+.tableFixHead thead th { position: sticky; top: 0; background:white; }
+
+.greyscale{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.you h5{
+    font-size:2rem;
+}
+
+.others h5{
+    font-weight:normal;
+}
+.opaque{
+    opacity:0.5;
+}
+
+.activeGame{
+    /*
+    transform: scale(1.05);
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08); 
+    */
+}
+
+.likert {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.likert>div {
+    display: table-cell;
+    border: 1px solid #c3c3c3;
+    text-align: center;
+    cursor: pointer;
+    width:14%;
+}
+
+.likert>div>span {
+    display: block;
+    background-color: #ebebeb;
+    border-bottom: .0833333em solid #c3c3c3;
+    padding: 5px;
+    height:60px;
+    text-align: center;
+}
+
+.likert>div:after {
+    content: '';
+    display: inline-block;
+    background-color: #d4d4d4;
+    width: 1.01em;
+    height: 1em;
+    border-radius: 0.5em;
+    margin: 0.5em 0.5em .4em 0.5em;
+}
+
+.likert>div:hover:after {
+    background-color: #9f9f9f;
+}
+
+.likert>div.selected:after {
+    content: ' ';
+    font-size: .9em;
+    width: 1.23em;
+    height: 1.2em;
+    border-radius: 1em;
+    margin-top: .5em;
+    line-height: 1;
+    font-family: 'icomoon';
+    color: #fff;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    background-color: #4239ee;
+}
+
+.likert[disabled]>div {
+    cursor: default;
+}
+
+.likert[disabled]>div:after {
+    background-color: transparent;
+}
+
+.likert[disabled]>div:hover:after {
+    background-color: transparent;
+}
+
+.likert[disabled]>div.selected:after {
+    background-color: #4239ee;
+}
+
+.ng-invalid {
+    box-shadow: 0 0 0 1px red;
+}

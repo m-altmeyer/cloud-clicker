@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Gameful application</h1>
+        <p>Please interact with the application below to select which of the presented statements is more
+            important to you. After clicking on the button, a
+            short tutorial explains how you can interact with the application. Please <b style="color:red;">turn on the
+                sound</b>.
+        </p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-9" ng-click="gameOne.totalClicks=gameOne.totalClicks+1">
+        <a ng-show="gameOne.state=='TUTORIAL'" style="position:absolute;top:45%;left:35%;z-index:999;width:30%;"
+            class="btn btn-primary" ng-click="gameOne.startTutorial()">Start tutorial</a>
+        <a ng-show="gameOne.state=='TUTORIAL_END'" style="position:absolute;top:45%;left:52%;z-index:999;width:30%;"
+            class="btn btn-primary" ng-click="gameOne.startGame()">Start application</a>
+        <a ng-show="gameOne.state=='TUTORIAL_END'" style="position:absolute;top:45%;left:17%;z-index:999;width:30%;"
+            class="btn btn-primary" ng-click="gameOne.startTutorial()">Restart tutorial</a>
+        <a ng-show="gameOne.state=='GAME_OVER'" style="position:absolute;top:45%;left:35%;z-index:999;width:30%;"
+            class="btn btn-primary" ng-click="gameOne.sendGameStats()">Show result</a>
+        <div id="game-container" style="width:100%;"></div>
+        <div id="game-container-tutorial" ng-show="gameOne.state=='TUTORIAL_PLAYING'"
+            style="width:100%;height:100%;position:absolute;top:0;left:0;" style="width:100%;">
+            <img src="assets/playerObject.png" style="position:absolute;top:20%;left:9%" id="gameObject1">
+            <img src="assets/philanthropistObject.png" style="position:absolute;top:20%;right:12%" id="gameObject2">
+            <h3 id="label-more-important"
+                style="position:absolute;left:20%;top:5%;color:red;font-family: 'Fresca';font-size:40px;">What is
+                more
+                important to you?</h3>
+            <h3 id="label-counter"
+                style="position:absolute;left:46%;top:45%;color:red;font-family: 'Fresca';font-size:72px;">7</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">Round</div>
+            <div class="panel-body">
+                <h2
+                    style="font-weight: bold;font-size: 3rem;text-shadow: 7px 4px 1px #d4d4dd;margin-top:0px;padding-top:0;margin-bottom:0;">
+                    {{gameOne.currentRound}} / {{gameOne.comparisons.length}}
+                </h2>
+            </div>
+        </div>
+
+        <div class="panel panel-default" ng-show="gameOne.data.philanthropistTotal">
+            <div class="panel-heading">Result</div>
+            <div class="panel-body">
+               Your score distribution is as follows:<br>
+               Philanthropist: {{gameOne.data.philanthropistTotal}}<br>
+               Free Spirit: {{gameOne.data.freeSpiritTotal}}<br>
+               Socialiser: {{gameOne.data.socializerTotal}}<br>
+               Player: {{gameOne.data.playerTotal}}<br>
+               Achiever: {{gameOne.data.achieverTotal}}<br>
+               Disruptor: {{gameOne.data.disruptorTotal}}<br>
+            </div>
+        </div>
+
+    </div>
+</div>

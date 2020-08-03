@@ -1,0 +1,113 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="well">
+            <h3 style="color:red;" ng-show="start.windowWidth<1000">The screen size of your device is too small. Please
+                use
+                a desktop computer, laptop or tablet having a screen width of at least 1000 pixels to participate. Thank
+                you.</h3>
+            <h2>Researchers</h2>
+            <p>
+                Maximilian Altmeyer, M.Sc.<br />
+                Visiting PhD Student, University of Waterloo<br />
+                PhD Student, Saarland University<br>
+                <a href="mailto:maximilian.altmeyer@gmail.com">maximilian.altmeyer@gmail.com</a><br>
+                &nbsp;<br />
+
+                Dr. Gustavo Fortes Tondello<br />
+                PhD Researcher, University of Waterloo<br />
+                <a href="mailto:gustavo@tondello.com">gustavo@tondello.com</a><br>
+                &nbsp;<br>
+
+                Dr. Lennart E. Nacke<br />
+                Associate Professor, University of Waterloo<br />
+                <a href="mailto:len@uwaterloo.ca">len@uwaterloo.ca</a>
+            </p>
+            <h2 style="margin-top:0px;">Description</h2>
+            <p>You are invited to participate in a research study conducted by the investigators listed above. The
+                purpose of this study is to investigate your preferences in gameful applications and your enjoyment of
+                certain gameful applications. If you decide to volunteer, you will be asked to fill out an online survey
+                and to interact with two different gameful applications. Overall, the online study should take
+                approximately 15 minutes. First, you will be asked to provide demographic data including your age and
+                gender. Afterwards, a questionnaire to assess your preferences in gameful applications follows. After
+                answering questions about the perception of filling out this questionnaire, you will be asked to
+                interact with two gameful applications. In one application, your task is to collect as many virtual
+                items as possible by clicking on one of two statements, depending on which statement is more important
+                to you. In another application your goal is to shoot snowballs at targets unlocking virtual items in
+                order to make progress towards different goals within the gameful application. After interacting with
+                each gameful application, you will be asked to answer questions about your perception and enjoyment of
+                these applications. In both applications, your input (i.e. mouse clicks) is stored.</p>
+            <p>
+                Participation in this study is voluntary. You may skip any question you prefer not to answer. You can
+                withdraw your participation at any time without penalty or loss of remuneration by clicking through to
+                the end of the survey. To receive remuneration, please proceed to the end of the questionnaire and click
+                on the link to get back to Prolific. All incomplete data records will be deleted by us.
+                After the end of data collection, data can no longer be withdrawn, as the researchers will not know
+                which data came from which participant. You will receive 2.00 pounds for taking participation this
+                study.
+                There are no immediate benefits for you. Your participation contributes to game-related research and
+                might help to improve the user experience in gameful applications. Please note that interacting with the
+                gameful applications might cause minor psychological distress, such as minor stress due to the timed
+                nature of the gameful applications.
+            </p>
+            <p>
+                It is important for you to know that participation is anonymous in that we do not ask for your name. All
+                the data will be summarized for publication and no individual could be identified from these summarized
+                results. This study is being conducted as part of Maximilian Altmeyer's PhD dissertation.
+            </p>
+            <p>
+                You will be completing the study via an online survey operated by the researchers on a web server
+                operated by
+                netcup (https://www.netcup.eu/). When information is transmitted or stored over the internet privacy
+                cannot
+                be guaranteed. There is always a risk your responses may be intercepted by a third party (e.g.,
+                government
+                agencies, hackers). The researchers will not collect machine identifiers such as IP addresses. Netcup
+                may
+                temporarily collect this information without our knowledge and make this accessible to us but will not
+                collect information that could identify you personally. We will not use or save this information without
+                your consent.
+            </p>
+            <p>
+                The data with no personal identifiers collected from this study will be maintained on a
+                password-protected computer database in a restricted access area of the university. As well, the data
+                will be electronically archived after completion of the study and maintained for at least seven years
+                and then erased. To analyze the data, the anonymized data will be saved on Maximilian Altmeyer's secure
+                personal computer. The anonymous dataset will also be made publicly available on https://osf.io/ (Open
+                Science Foundation).
+            </p>
+            <p>
+                For all other questions, contact Maximilian Altmeyer (maximilian.altmeyer@gmail.com), Dr. Gustavo
+                Tondello (gustavo@tondello.com) or Dr. Lennart Nacke (len@uwaterloo.ca).
+            </p>
+            <p>
+                This study has been reviewed and received ethics clearance through a University of Waterloo Research
+                Ethics
+                Committee (ORE#41608). If you have questions for the Committee contact the Office of Research Ethics, at
+                1-519-888-4567 ext. 36005 or ore- ceo@uwaterloo.ca<br>
+                <b>Thank you for considering participation in this study.</b>
+            </p>
+
+
+
+            <h2>Consent to Participate</h2>
+            <p>
+                By indicating your consent, you are not waving your legal rights or releasing the investigators or
+                involved institution from their legal and professional responsibilities.
+            </p>
+            <p>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox1" ng-model="start.consent">
+                    <label for="checkbox1">
+                        I am 18 years or older and with full knowledge of all foregoing, I agree, of my own free will,
+                        to participate in this study.</label>
+                </div>
+            </p>
+        </div>
+        <h3 style="color:red;" ng-show="start.windowWidth<1000">The screen size of your device is too small. Please use
+            a desktop computer, laptop or tablet having a screen width of at least 1000 pixels to participate. Thank
+            you.</h3>
+        <a ng-class="{'disabled': start.windowWidth<1000}" ng-click="start.submitConsent()"
+            class="btn btn-primary btn-lg pull-right">Start</a>
+    </div>
+    <div style="clear:both">&nbsp;</div>
+</div>

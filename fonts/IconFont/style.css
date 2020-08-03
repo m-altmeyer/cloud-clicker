@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?yi54g8');
+  src:  url('fonts/icomoon.eot?yi54g8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yi54g8') format('truetype'),
+    url('fonts/icomoon.woff?yi54g8') format('woff'),
+    url('fonts/icomoon.svg?yi54g8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-PlayerType-Disruptor:before {
+  content: "\e919";
+  color: #474747;
+}
+.icon-PlayerType-FreeSpirit:before {
+  content: "\e91a";
+  color: #474747;
+}
+.icon-PlayerType-Philanthropist:before {
+  content: "\e91b";
+  color: #474747;
+}
+.icon-PlayerType-Player:before {
+  content: "\e91c";
+  color: #474747;
+}
+.icon-PlayerType-Socialiser:before {
+  content: "\e91d";
+  color: #474747;
+}
+.icon-Menu:before {
+  content: "\e91e";
+  color: #474747;
+}
+.icon-BigFive-Agreeableness:before {
+  content: "\e91f";
+  color: #474747;
+}
+.icon-BigFive-Conscientiousness:before {
+  content: "\e920";
+  color: #474747;
+}
+.icon-BigFive-Extraversion:before {
+  content: "\e921";
+  color: #474747;
+}
+.icon-BigFive-Neuroticism:before {
+  content: "\e922";
+  color: #474747;
+}
+.icon-Checkmark:before {
+  content: "\e923";
+  color: #474747;
+}
+.icon-BigFive--Openness:before {
+  content: "\e924";
+  color: #474747;
+}
+.icon-Circuit:before {
+  content: "\e900";
+  color: #474747;
+}
+.icon-Coin:before {
+  content: "\e901";
+  color: #474747;
+}
+.icon-Competition:before {
+  content: "\e902";
+  color: #474747;
+}
+.icon-Dashboard:before {
+  content: "\e903";
+  color: #474747;
+}
+.icon-Delete:before {
+  content: "\e904";
+  color: #ff0043;
+}
+.icon-ExpPoints:before {
+  content: "\e905";
+  color: #474747;
+}
+.icon-FitnessCircuit:before {
+  content: "\e906";
+  color: #474747;
+}
+.icon-Gamification:before {
+  content: "\e907";
+  color: #474747;
+}
+.icon-Gems:before {
+  content: "\e908";
+  color: #474747;
+}
+.icon-HealthInfo:before {
+  content: "\e909";
+  color: #474747;
+}
+.icon-Info:before {
+  content: "\e90a";
+  color: #474747;
+}
+.icon-List:before {
+  content: "\e90b";
+  color: #474747;
+}
+.icon-Logout:before {
+  content: "\e90c";
+  color: #474747;
+}
+.icon-Manual:before {
+  content: "\e90d";
+  color: #474747;
+}
+.icon-Monster:before {
+  content: "\e90e";
+  color: #474747;
+}
+.icon-Points:before {
+  content: "\e90f";
+  color: #474747;
+}
+.icon-Profile:before {
+  content: "\e910";
+  color: #474747;
+}
+.icon-Progress:before {
+  content: "\e911";
+  color: #474747;
+}
+.icon-Questionaire:before {
+  content: "\e912";
+  color: #474747;
+}
+.icon-Stars:before {
+  content: "\e913";
+  color: #474747;
+}
+.icon-System:before {
+  content: "\e914";
+  color: #474747;
+}
+.icon-Teamwork:before {
+  content: "\e915";
+  color: #474747;
+}
+.icon-Tiles:before {
+  content: "\e916";
+  color: #474747;
+}
+.icon-Unlockables:before {
+  content: "\e917";
+  color: #474747;
+}
+.icon-Wearable:before {
+  content: "\e918";
+  color: #474747;
+}
